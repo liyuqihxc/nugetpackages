@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>hxc.ChromiumFX</id>
+    <version>3.3440.1</version>
+    <title>ChromiumFX</title>
+    <authors>liyuqihxc</authors>
+    <owners>liyuqihxc</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://bitbucket.org/chromiumfx/chromiumfx/src/default/License.txt</licenseUrl>
+    <projectUrl>https://bitbucket.org/chromiumfx/chromiumfx</projectUrl>
+    <iconUrl>https://bitbucket.org/chromiumfx/chromiumfx/avatar/32/</iconUrl>
+    <description>.NET bindings for the Chromium Embedded Framework.</description>
+    <tags>C#, cef, chromiumfx</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0-Client" />
+    </dependencies>
+  </metadata>
+</package>
