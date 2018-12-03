@@ -3,6 +3,6 @@
     "author": "liyuqihxc",
     "classifications": [ "abp", "aspnetcore" ],
     "identity": "hxc.AspNetCoreTemplate",
-    "name": "Abp Asp.Net Core Project Template",
-    "shortName": "hxcabpaspnet"
+    "name": "Asp.Net Core With Abp",
+    "shortName": "hxc-aspnetcore"
 }
