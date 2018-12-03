@@ -1,7 +1,7 @@
 ﻿using System;
 using Abp.EntityFrameworkCore;
 using Abp.Modules;
-using IWM.Core;
+using TemplateName.Core;
 
 namespace TemplateName.Data
 {

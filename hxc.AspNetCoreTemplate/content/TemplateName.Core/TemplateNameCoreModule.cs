@@ -2,7 +2,6 @@
 using Abp;
 using Abp.Modules;
 using Castle.MicroKernel.Registration;
-using IWM.Core.StratumProxy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 

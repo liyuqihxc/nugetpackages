@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Abp.AspNetCore.Mvc.Controllers;
+using Abp.Runtime.Validation;
+using Abp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TemplateName.WebApi.Controllers
 {
     [Route("api/[controller]")]
+    [DontWrapResult, DisableValidation]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : AbpController
     {
         // GET api/values
         [HttpGet]

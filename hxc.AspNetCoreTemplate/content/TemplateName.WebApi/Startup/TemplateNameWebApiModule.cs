@@ -3,8 +3,8 @@ using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.AutoMapper;
 using Abp.Modules;
-using IWM.Data;
-using TemplateName.Exceptions;
+using TemplateName.Data;
+using TemplateName.WebApi.Exceptions;
 using Microsoft.AspNetCore.Builder;
 
 namespace TemplateName.WebApi
