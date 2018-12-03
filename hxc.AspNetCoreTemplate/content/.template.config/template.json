@@ -4,5 +4,5 @@
     "classifications": [ "abp", "aspnetcore" ],
     "identity": "hxc.AspNetCoreTemplate",
     "name": "Asp.Net Core With Abp",
-    "shortName": "hxc-aspnetcore"
+    "shortName": "hxc-abpaspnetcore"
 }
