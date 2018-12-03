@@ -1,0 +1,2 @@
+# nugettemplate
+nuget templates
