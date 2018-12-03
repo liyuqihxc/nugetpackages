@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "liyuqihxc",
+    "classifications": [ "abp", "aspnetcore" ],
+    "identity": "hxc.AspNetCoreTemplate.Data",
+    "name": "Abp Asp.Net Core Project Template",
+    "shortName": "hxcabpaspnet-data"
+}

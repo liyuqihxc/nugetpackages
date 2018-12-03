@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>hxc.AspNetCoreTemplate.WebApi</id>
+    <version>1.0.0</version>
+    <description>
+      Abp Asp.Net Core Project Template.
+    </description>
+    <authors>liyuqihxc</authors>
+    <owners>liyuqihxc</owners>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>C#, abp, aspnetcore</tags>
+    <dependencies>
+      <group targetFramework="netcoreapp2.1">
+        
+      </group>
+      <group targetFramework="netstandard2.0">
+        <dependency id="hxc.AspNetCoreTemplate.Data" version="1.0.0" />
+        <dependency id="Abp.AspNetCore" version="4.0.2" />
+        <dependency id="Abp.AutoMapper" version="4.0.2" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
