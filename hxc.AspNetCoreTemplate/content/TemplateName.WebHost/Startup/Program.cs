@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using TemplateName.Core.Logging;
 
-namespace TemplateName.WebApi
+namespace TemplateName.WebHost
 {
     public class Program
     {
@@ -31,7 +31,7 @@ namespace TemplateName.WebApi
                 .AddCommandLine(args)
                 .Build();
 
-            return WebHost.CreateDefaultBuilder(args)
+            return Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(args)
                 .UseConfiguration(config)
                 .ConfigureLogging((hostingContext, logging) =>
                 {

@@ -15,7 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TemplateName.Core.Configuration;
 
-namespace TemplateName.WebApi
+namespace TemplateName.WebHost
 {
     public class Startup
     {
@@ -34,7 +34,7 @@ namespace TemplateName.WebApi
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            return services.AddAbp<AppWebApiModule>(options =>
+            return services.AddAbp<AppWebHostModule>(options =>
             {
             });
         }
@@ -48,8 +48,9 @@ namespace TemplateName.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMiddleware<Exceptions.ErrorHandlingMiddleware>();
+            app.UseMiddleware<WebApi.Exceptions.ErrorHandlingMiddleware>();
 
+            app.UseStaticFiles();
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>

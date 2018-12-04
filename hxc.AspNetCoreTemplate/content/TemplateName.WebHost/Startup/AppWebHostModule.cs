@@ -1,21 +1,23 @@
-﻿using System;
 using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.AutoMapper;
 using Abp.Modules;
 using TemplateName.Data;
-using TemplateName.WebApi.Exceptions;
+using TemplateName.WebApi;
 using Microsoft.AspNetCore.Builder;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace TemplateName.WebApi
+namespace TemplateName.WebHost
 {
-    [DependsOn(typeof(AppDataModule), typeof(AbpAspNetCoreModule), typeof(AbpAutoMapperModule))]
-    public class AppWebApiModule : AbpModule
+    [DependsOn(typeof(AppDataModule), typeof(AppWebApiModule), typeof(AbpAspNetCoreModule), typeof(AbpAutoMapperModule))]
+    public class AppWebHostModule : AbpModule
     {
         public override void PreInitialize()
         {
-            Configuration.Modules.AbpAutoMapper()
-                .Configurators.Add(ExceptionMapperConfig.ConfigExceptionMapper);
+            
         }
         
         public override void Initialize()
@@ -26,7 +28,7 @@ namespace TemplateName.WebApi
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
