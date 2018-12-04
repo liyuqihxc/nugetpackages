@@ -6,9 +6,9 @@ using System.Text;
 
 namespace TemplateName.Data.EntityFrameworkCore
 {
-    public class TemplateNameDbContext : AbpDbContext
+    public class AppDbContext : AbpDbContext
     {
-        public TemplateNameDbContext(DbContextOptions<TemplateNameDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
         }

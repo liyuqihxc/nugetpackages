@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Builder;
 
 namespace TemplateName.WebApi
 {
-    [DependsOn(typeof(TemplateNameDataModule), typeof(AbpAspNetCoreModule), typeof(AbpAutoMapperModule))]
-    public class TemplateNameWebApiModule : AbpModule
+    [DependsOn(typeof(AppDataModule), typeof(AbpAspNetCoreModule), typeof(AbpAutoMapperModule))]
+    public class AppWebApiModule : AbpModule
     {
         public override void PreInitialize()
         {

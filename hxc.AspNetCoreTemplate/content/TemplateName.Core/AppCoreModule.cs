@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace TemplateName.Core
 {
     [DependsOn(typeof(AbpKernelModule))]
-    public class TemplateNameCoreModule : AbpModule
+    public class AppCoreModule : AbpModule
     {
         public override void Initialize()
         {

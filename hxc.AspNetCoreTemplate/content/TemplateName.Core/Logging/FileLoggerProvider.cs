@@ -59,7 +59,7 @@ namespace TemplateName.Core.Logging
                 var fullName = Path.Combine(_path, $"{_fileName}{group.Year:0000}{group.Month:00}{group.Day:00}-{index}.txt");
                 var fileInfo = new FileInfo(fullName);
 
-                if (_maxFileSize > 0 && fileInfo.Exists && fileInfo.Length > _maxFileSize)
+                if (fileInfo.Exists)
                     index++;
                 else
                     return fullName;

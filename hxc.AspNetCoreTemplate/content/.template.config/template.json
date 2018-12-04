@@ -1,8 +1,15 @@
 {
-    "$schema": "http://json.schemastore.org/template",
-    "author": "liyuqihxc",
-    "classifications": [ "abp", "aspnetcore" ],
-    "identity": "hxc.AspNetCoreTemplate",
-    "name": "Asp.Net Core With Abp",
-    "shortName": "hxc-abpaspnetcore"
+  "$schema": "http://json.schemastore.org/template",
+  "author": "liyuqihxc",
+  "classifications": [ "abp", "aspnetcore" ],
+  "identity": "hxc.AspNetCoreTemplate",
+  "name": "Asp.Net Core With Abp",
+  "shortName": "hxc-aspnetcore",
+  "defaultName": "AbpAspNetCoreProject",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "TemplateName"
 }

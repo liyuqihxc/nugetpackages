@@ -34,7 +34,7 @@ namespace TemplateName.WebApi
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            return services.AddAbp<TemplateNameWebApiModule>(options =>
+            return services.AddAbp<AppWebApiModule>(options =>
             {
             });
         }

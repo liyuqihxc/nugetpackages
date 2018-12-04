@@ -5,8 +5,8 @@ using TemplateName.Core;
 
 namespace TemplateName.Data
 {
-    [DependsOn(typeof(TemplateNameCoreModule), typeof(AbpEntityFrameworkCoreModule))]
-    public class TemplateNameDataModule : AbpModule
+    [DependsOn(typeof(AppCoreModule), typeof(AbpEntityFrameworkCoreModule))]
+    public class AppDataModule : AbpModule
     {
         public override void Initialize()
         {
