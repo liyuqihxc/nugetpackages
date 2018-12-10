@@ -6,7 +6,7 @@ using System.Text;
 
 namespace TemplateName.Core.Logging
 {
-    public static class FileLoggerFactoryExtensions
+    public static class FileLoggerExtensions
     {
         public static ILoggingBuilder AddFile(this ILoggingBuilder builder)
         {

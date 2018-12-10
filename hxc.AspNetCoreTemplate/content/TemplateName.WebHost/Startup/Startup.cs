@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.AspNetCore.Mvc.Extensions;
+using Castle.Facilities.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TemplateName.Core.Configuration;
+using TemplateName.Core.Logging;
 
 namespace TemplateName.WebHost
 {
@@ -36,6 +38,7 @@ namespace TemplateName.WebHost
 
             return services.AddAbp<AppWebHostModule>(options =>
             {
+                options.IocManager.IocContainer.AddFacility<LoggingFacility>(f => f.AddFileLogger());
             });
         }
 
