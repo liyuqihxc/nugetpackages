@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TemplateName.Core.Logging
+namespace hxc.Logging.RollingFileLogger
 {
     public static class FileLoggerExtensions
     {

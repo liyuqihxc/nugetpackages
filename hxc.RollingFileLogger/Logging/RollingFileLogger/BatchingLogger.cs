@@ -4,7 +4,7 @@ using System.Text;
 
 using Microsoft.Extensions.Logging;
 
-namespace TemplateName.Core.Logging
+namespace hxc.Logging.RollingFileLogger
 {
     public class BatchingLogger : ILogger
     {
