@@ -13,6 +13,7 @@
     <PackageReference Include="Abp.AutoMapper" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="hxc.RollingFileLogger" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

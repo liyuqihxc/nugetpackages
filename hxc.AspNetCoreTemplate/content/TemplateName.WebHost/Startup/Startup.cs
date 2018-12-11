@@ -15,7 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TemplateName.Core.Configuration;
-using TemplateName.Core.Logging;
+using hxc.Logging.RollingFileLogger;
 
 namespace TemplateName.WebHost
 {
