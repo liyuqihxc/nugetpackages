@@ -2,12 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>hxc.AspNetCoreTemplate</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>
       Abp Asp.Net Core Project Template.
     </description>
     <authors>liyuqihxc</authors>
     <owners>liyuqihxc</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
