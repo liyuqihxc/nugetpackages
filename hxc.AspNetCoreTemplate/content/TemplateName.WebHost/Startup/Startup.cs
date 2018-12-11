@@ -38,7 +38,7 @@ namespace TemplateName.WebHost
 
             return services.AddAbp<AppWebHostModule>(options =>
             {
-                options.IocManager.IocContainer.AddFacility<LoggingFacility>(f => f.AddFileLogger());
+                
             });
         }
 
