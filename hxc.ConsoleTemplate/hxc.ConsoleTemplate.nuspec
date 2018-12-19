@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>hxc.ConsoleTemplate</id>
+    <version>1.0.0</version>
+    <description>
+      Abp .Net Core Console Project Template.
+    </description>
+    <authors>liyuqihxc</authors>
+    <owners>liyuqihxc</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>C#, abp, dotnetcore, console</tags>
+  </metadata>
+</package>

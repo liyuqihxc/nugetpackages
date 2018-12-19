@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "liyuqihxc",
+    "classifications": [ "abp", "dotnetcore", "console" ],
+    "identity": "hxc.ConsoleTemplate",
+    "name": ".Net Core Console With Abp",
+    "shortName": "hxc-console",
+    "defaultName": "AbpConsoleProject",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "preferNameDirectory": true,
+    "sourceName": "TemplateName"
+  }
