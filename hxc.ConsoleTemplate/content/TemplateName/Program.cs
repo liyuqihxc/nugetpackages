@@ -43,7 +43,9 @@ namespace TemplateName
 
             var abpBootstrapper = AbpBootstrapper.Create<AppModule>();
             services.AddSingleton(abpBootstrapper);
-            return WindsorRegistrationHelper.CreateServiceProvider(abpBootstrapper.IocManager.IocContainer, services);
+            var serviceProvider = WindsorRegistrationHelper.CreateServiceProvider(abpBootstrapper.IocManager.IocContainer, services);
+            abpBootstrapper.Initialize();
+            return serviceProvider;
         }
     }
 }
