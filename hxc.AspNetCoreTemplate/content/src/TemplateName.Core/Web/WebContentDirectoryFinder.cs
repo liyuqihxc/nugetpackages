@@ -20,7 +20,7 @@ namespace TemplateName.Core.Web
                 directoryInfo = directoryInfo.Parent ?? throw new Exception("Could not find content root folder!");
             }
 
-            return Path.Combine(directoryInfo.FullName, @"TemplateName.WebHost");
+            return Path.Combine(directoryInfo.FullName, "src", @"TemplateName.WebHost");
         }
 
         private static bool DirectoryContains(string directory, string fileName)

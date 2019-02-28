@@ -7,7 +7,6 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using hxc.Logging.RollingFileLogger;
 
 namespace TemplateName.WebHost
 {
@@ -36,7 +35,6 @@ namespace TemplateName.WebHost
                 .ConfigureLogging((hostingContext, logging) =>
                 {
                     logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
-                    logging.AddFile(opt => opt.LogDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs"));
                 })
                 .UseKestrel()
                 .UseStartup<Startup>();
