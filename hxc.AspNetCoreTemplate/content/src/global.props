@@ -1,7 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <Version>1.0.0</Version>
-    <LangVersion>latest</LangVersion>
-    <RuntimeFrameworkVersion>2.2.2</RuntimeFrameworkVersion>
-  </PropertyGroup>
-</Project>

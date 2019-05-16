@@ -13,9 +13,9 @@ var configuration = Argument("configuration", "Release");
 var branch = Argument("branch", GitBranchCurrent("./").FriendlyName);
 
 var testProjects = new List<Tuple<string, string[]>>
-  {
-    new Tuple<string, string[]>("TemplateName.Test", new [] { "netcoreapp2.2" }),
-  };
+{
+  new Tuple<string, string[]>("TemplateName.Test", new [] { "netcoreapp2.2" }),
+};
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
